@@ -3,6 +3,8 @@ body {
 	padding: 0;
 	font-family: "Roboto", san-sefif;
 	min-width: 320px;
+	}
+div, section, ul, li {
 	box-sizing: border-box;
 }
 .container {
@@ -173,4 +175,92 @@ input {
 	background-image: url(img/icon_phone.png);
 	background-repeat: no-repeat;
 	background-position: 15px center;
+}
+.gribok {
+	padding-top: 110px;
+    text-align: center;
+}
+.mandala {
+	display: block;
+	width: 92px;
+	height: auto;
+	margin: 0 auto;
+}
+h2 {
+	font-size: 48px;
+}
+.gribok h5 {
+	font-size: 24px;
+}
+.gribok-list {
+	padding-inline-start: 0px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.gribok-list__item {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.gribok-list__wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.gribok-list__image {
+	float: left;
+}
+.gribok-list__title {
+	padding-left: 10px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.gribok-list__text {
+	font-size: 18px;
+	font-weight: normal;
+}
+.gribok-list__text::before {
+	content: "";
+	background-image: url(img/separator_line.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.gribok-statistic {
+	padding: 1.5rem 12rem;
+	text-align: center;
+	border: 3px solid #f4d3bb;
+	border-radius: 10px;
+}
+.gribok-statistic img{
+	margin-top: -55px;
+    position: absolute;
+}
+
+.sredstva-list {
+	padding-inline-start: 0px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.sredstva-list__item {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.sredstva-list__image {
+	width: fit-content;
+    align-self: center;
+}
+.sredstva-item__title h6{
+	font-size: 24px;
+	font-weight: 700;
+}
+h6 span {
+	text-transform: uppercase;
+	color: #ff6b00;
 }
