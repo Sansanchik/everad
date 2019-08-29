@@ -189,8 +189,10 @@ input {
 }
 h2 {
 	font-size: 48px;
+	text-align: center;
 }
-.gribok h5 {
+.gribok h5, .effective h5{
+	text-align: center;
 	font-size: 24px;
 }
 .gribok-list {
@@ -222,7 +224,7 @@ h2 {
 .gribok-list__text {
 	font-size: 18px;
 	font-weight: normal;
-}
+} 
 .gribok-list__text::before {
 	content: "";
 	background-image: url(img/separator_line.png);
@@ -230,17 +232,19 @@ h2 {
 	background-position: left center;
 }
 .gribok-statistic {
+	position: relative;
 	padding: 1.5rem 12rem;
 	text-align: center;
 	border: 3px solid #f4d3bb;
 	border-radius: 10px;
 }
 .gribok-statistic img{
-	margin-top: -55px;
+	left: 46%;
+    top: -25px;
     position: absolute;
 }
 
-.sredstva-list {
+.sredstva-list, .effective-list {
 	padding-inline-start: 0px;
 	list-style-type: none;
 	display: flex;
@@ -261,11 +265,17 @@ h2 {
 }
 .sredstva-item__title, .effective-item__title {
 	font-size: 24px;
+	text-align: center;
 	font-weight: 700;
 }
 .sredstva-item__paragtaph, .effective-item__paragtaph {
 	font-size: 18px;
+	text-align: center;
 	font-weight: 700;
+}
+.effective-list__item {
+	border: 3px solid #f64d01;
+	border-radius: 5px;
 }
 h6 {
 	padding: 0;
@@ -276,7 +286,7 @@ h6 {
 	text-transform: uppercase;
 	color: #ff6b00;
 }
-.sredstva-output {
+.sredstva-output, .effective-output {
 	padding: 1.5rem 12rem;
 	text-align: center;
 	border: 3px solid #f4d3bb;
