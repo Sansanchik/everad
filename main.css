@@ -257,7 +257,7 @@ h2 {
 }
 .sredstva {
 	background-color: #f0f8fb;
-	background-image: url(img/wave-top.png), url(img/wave-bottom.png)
+	background-image: url(img/wave-top.png), url(img/wave-bottom.png);
 	background-repeat: repeat-x, repeat-x;
 	background-position: top, bottom;
 }
@@ -348,33 +348,20 @@ h6 {
 }
 
 @media screen and (max-width: 576px) {
+	.container {width: 90%;	}
+	.hero-title {margin-left: 0; width: 100%;}
 	.hero-image {display: none;}
-	.header-logo__text {
-    display: inline-block;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;}
-    .header-list {
-    width: 100%;}
-	.hero-title {
-    margin-left: 10px;
-    width: 95%;}
-	.description-list {
-     margin-left: 0;
-    width: 100%;}
+	.header-logo__text {display: inline-block; text-align: center; font-size: 30px;}
+    .header-list {width: 100%;}
+	.description-list {margin-left: 0; width: 100%;}
     .order {position: unset;  margin: auto;}
     .gribok-list__item { width: 100%;}
     .gribok-statistic {padding: 0}
     .gribok-statistic img {left: 34%;}
     h2 { font-size: 30px;}
-    .sredstva-list, .effective-list {
-    display: block;}
-    .sredstva-list__item, .effective-list__item {
-    width: 100%;}
-    .sredstva-output, .effective-output {
-     padding: 0;}
-    .sredstva-output img {  margin-top: -30px;
-    position: unset;}
-    .application-wrap {
-    display: block;}
+    .sredstva-list, .effective-list {display: block;}
+    .sredstva-list__item, .effective-list__item { width: 100%;}
+    .sredstva-output, .effective-output {padding: 0;}
+    .sredstva-output img {  margin-top: -30px; position: unset;}
+    .application-wrap { display: block;}
 }
