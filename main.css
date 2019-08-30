@@ -6,6 +6,7 @@ body {
 	}
 div, section, ul, li {
 	box-sizing: border-box;
+	    padding-inline-start: 0px;
 }
 .container {
 	position: relative;
@@ -30,10 +31,8 @@ header {
 }
 .header-logo__image {
 	float: left;
-	z-index: 3;
-}
+	}
 .header-logo__text {
-	z-index: 3;
 	display: inline-block;
 	font-weight: bold;
 	font-size: 24px;
@@ -69,7 +68,6 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0px;
-	z-index: 0;
 }
 .hero-title {
 	margin-left: 40%;
@@ -102,6 +100,7 @@ h1 {
 }
 .description-list__item {
 	font-size: 18px;
+	    height: 60px;
 	color: #000;
 	margin-bottom: 20px;
 	font-style: normal;
@@ -127,6 +126,7 @@ h1 {
 }
 .order {
 	position: absolute;
+	background-color: #fff;
 	border: 10px solid #a7c93d;
 	border-radius: 10px;
 	right: 0;
@@ -142,7 +142,7 @@ h1 {
 	font-weight: normal;
 	background-image: url(img/free_car.png);
 	background-repeat: no-repeat;
-	background-position: 15px center;
+	background-position: 5px center;
 	padding-left: 20px;
 	border-bottom: 10px solid #a7c93d;
     border-radius: 0 0 10px 10px;
@@ -177,6 +177,18 @@ input {
 	background-repeat: no-repeat;
 	background-position: 15px center;
 }
+.order-deffence{
+	margin: 0;
+	background-color: #cfdae8;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 14px;
+	padding-left: 45px;
+	background-image: url(img/icon_defence.png);
+	background-repeat: no-repeat;
+	background-position: 45px center;
+}
 .gribok {
 	padding-top: 60px;
     text-align: center;
@@ -199,7 +211,7 @@ h2 {
 	padding-inline-start: 0px;
 	list-style-type: none;
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .gribok-list__item {
@@ -243,7 +255,12 @@ h2 {
     top: -25px;
     position: absolute;
 }
-
+.sredstva {
+	background-color: #f0f8fb;
+	background-image: url(img/wave-top.png), url(img/wave-bottom.png)
+	background-repeat: repeat-x, repeat-x;
+	background-position: top, bottom;
+}
 .sredstva-list, .effective-list {
 	padding-inline-start: 0px;
 	list-style-type: none;
@@ -295,4 +312,69 @@ h6 {
 .sredstva-output img{
 	margin-top: -55px;
     position: absolute;
+}
+.sredstva-output {
+    background-image: url(img/wave-bottom.png.png);
+	background-repeat: repeat-x;
+	background-position: left 120%;
+}
+.application {
+	background-color: #f0f8fb;
+	background-image: url(img/wave-top.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.application_image {
+	width: 230px;
+	height: auto;
+}
+.application-wrap {
+	display: flex;
+	justify-content: center;
+}
+.application-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.application-list__item {
+	display: flex;
+}
+.application-list__item img {
+	width: 80px;
+}
+.application-item__wrap img {
+	width: 20px;
+}
+
+@media screen and (max-width: 576px) {
+	.hero-image {display: none;}
+	.header-logo__text {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;}
+    .header-list {
+    width: 100%;}
+	.hero-title {
+    margin-left: 10px;
+    width: 95%;}
+	.description-list {
+     margin-left: 0;
+    width: 100%;}
+    .order {position: unset;  margin: auto;}
+    .gribok-list__item { width: 100%;}
+    .gribok-statistic {padding: 0}
+    .gribok-statistic img {left: 34%;}
+    h2 { font-size: 30px;}
+    .sredstva-list, .effective-list {
+    display: block;}
+    .sredstva-list__item, .effective-list__item {
+    width: 100%;}
+    .sredstva-output, .effective-output {
+     padding: 0;}
+    .sredstva-output img {  margin-top: -30px;
+    position: unset;}
+    .application-wrap {
+    display: block;}
 }
