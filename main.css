@@ -19,8 +19,6 @@ header {
 	background-position: left top;
 }
 .header-top {
-
-	z-index: 2;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -31,7 +29,7 @@ header {
 }
 .header-logo__image {
 	float: left;
-	}
+}
 .header-logo__text {
 	display: inline-block;
 	font-weight: bold;
@@ -314,7 +312,7 @@ h6 {
     position: absolute;
 }
 .sredstva-output {
-    background-image: url(img/wave-bottom.png.png);
+    background-image: url(img/wave-bottom.png);
 	background-repeat: repeat-x;
 	background-position: left 120%;
 }
@@ -351,8 +349,11 @@ h6 {
 	.container {width: 90%;	}
 	.hero-title {margin-left: 0; width: 100%;}
 	.hero-image {display: none;}
+	.header-logo { margin: auto;}
 	.header-logo__text {display: inline-block; text-align: center; font-size: 30px;}
-    .header-list {width: 100%;}
+    .header-list {width: 100%; display: block;}
+    .header-list__item { width: 100%; height: 40px; line-height: 40px;}
+    h1 {text-align: center;}
 	.description-list {margin-left: 0; width: 100%;}
     .order {position: unset;  margin: auto;}
     .gribok-list__item { width: 100%;}
