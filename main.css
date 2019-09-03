@@ -35,10 +35,10 @@ header {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 65px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 .header-list{
-	width: 70%;
+	width: 60%;
 	float: right;
 	display: flex;
     justify-content: flex-end;
@@ -274,6 +274,7 @@ h2 {
 }
 .sredstva-list__image, .effective-list__image {
 	padding: 25px;
+	margin: -64px 0 0 0;
 	border-radius: 50%;
 	width: fit-content;
     align-self: center;
